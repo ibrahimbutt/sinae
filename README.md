@@ -14,10 +14,6 @@ So I can see what the test is about,
 It should have a way to title tests
 
 As a Maker,
-So I can test,
-It should run a test
-
-As a Maker,
 So I can test my code is working correctly,
 It should have a way to evaluate values
 

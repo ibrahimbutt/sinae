@@ -1,3 +1,4 @@
-module.exports = function(message) {
+module.exports = (message, tests) => {
   console.log(message)
+  tests()
 }

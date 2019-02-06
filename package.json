@@ -1,0 +1,24 @@
+{
+  "name": "sinae",
+  "version": "0.0.0",
+  "description": "A light-weight testing framework.",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "node index.test.js",
+    "prepublish": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahimbutt/sinae.git"
+  },
+  "keywords": [
+    "TDD"
+  ],
+  "author": "Mohammad Ibrahim Butt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibrahimbutt/sinae/issues"
+  },
+  "homepage": "https://github.com/ibrahimbutt/sinae#readme"
+}

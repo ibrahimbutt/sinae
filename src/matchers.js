@@ -3,7 +3,7 @@ const resultLogger = require('./resultLogger')
 module.exports = value => {
   return {
     toEqual(condition) {
-      result = value == condition
+      const result = value == condition
       resultLogger({
         result,
         condition,
@@ -11,7 +11,7 @@ module.exports = value => {
       })
     },
     toNotEqual(condition) {
-      result = value != condition
+      const result = value != condition
       resultLogger({
         result,
         condition,
@@ -19,7 +19,7 @@ module.exports = value => {
       })
     },
     toBe(condition) {
-      result = value === condition
+      const result = value === condition
       resultLogger({
         result,
         condition,
@@ -27,10 +27,26 @@ module.exports = value => {
       })
     },
     toNotBe(condition) {
-      result = value !== condition
+      const result = value !== condition
       resultLogger({
         result,
         condition,
+        value
+      })
+    },
+    contains(condition) {
+      const result = value.includes(condition)
+      resultLogger({
+        result,
+        condition,
+        value
+      })
+    },
+    doesNotContain(condition) {
+      const result = !value.includes(condition)
+      resultLogger({
+        result,
+        condition: `to not contain ${condition}`,
         value
       })
     }

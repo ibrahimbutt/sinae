@@ -28,4 +28,12 @@ describe('Sinae Tests', () => {
   it('can check false equality', () => {
     expect([1]).toNotBe([1])
   })
+
+  it('can check if array contains', () => {
+    expect([3, 2]).contains(2)
+  })
+
+  it('can check if array does not contain', () => {
+    expect([3, 2]).doesNotContain(2)
+  })
 })

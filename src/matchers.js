@@ -1,10 +1,22 @@
+const resultLogger = require('./resultLogger')
+
 module.exports = value => {
   return {
     toEqual(condition) {
-      console.log(value == condition)
+      result = value == condition
+      resultLogger({
+        result,
+        condition,
+        value
+      })
     },
     toNotEqual(condition) {
-      console.log(value != condition)
+      result = value != condition
+      resultLogger({
+        result,
+        condition,
+        value
+      })
     }
   }
 }

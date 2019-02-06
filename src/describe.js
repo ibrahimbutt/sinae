@@ -3,6 +3,7 @@ module.exports = (message, tests) => {
     throw Error('describe blocks require a function as a second argument')
   }
 
-  console.log(message)
+  console.group(message)
   tests()
+  console.groupEnd()
 }

@@ -17,6 +17,22 @@ module.exports = value => {
         condition,
         value
       })
+    },
+    toBe(condition) {
+      result = value === condition
+      resultLogger({
+        result,
+        condition,
+        value
+      })
+    },
+    toNotBe(condition) {
+      result = value !== condition
+      resultLogger({
+        result,
+        condition,
+        value
+      })
     }
   }
 }

@@ -82,6 +82,17 @@ Stores a value, which is passed onto a matcher for evaluation.
 - `value`: the variable, returned value, or object passed in for evaluation
 - `condition`: the expectation the `value` will be compared to 
 
+### Matchers
+
+#### Equality
+
+- `toEqual`: returns true if equal
+- `toNotEqual`: returns true if not equal
+- `toBe`: returns true if strictly equal
+- `toNotBe`: returns true if strictly not equal
+- `toContain`: returns true if an array contains `condition` one level deep
+- `toContain`: returns true if an array doesn't contain `condition` one level deep
+
 ## Style
 
 Logs inside `describe` and `it` blocks are indented:

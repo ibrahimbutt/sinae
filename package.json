@@ -5,8 +5,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "test": "node index.test.js",
-    "prepublish": "npm test"
+    "test": "node index.test.js"
   },
   "repository": {
     "type": "git",

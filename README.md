@@ -70,7 +70,7 @@ Creates a block that groups several tests together.
 
 ### `it(description: String, fn: Function)`
 
-Creates a block where you can set up and run your test.
+Creates a block where you can set up and run a test.
 
 - `description`: identifies the test in the console
 - `fn`: function decleration, inside which the test is set up and an expectation is defined

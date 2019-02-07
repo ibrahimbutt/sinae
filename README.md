@@ -81,3 +81,26 @@ Stores a value, which is passed onto a matcher for evaluation.
 
 - `value`: the variable, returned value, or object passed in for evaluation
 - `condition`: the expectation the `value` will be compared to 
+
+## Style
+
+Logs inside `describe` and `it` blocks are indented:
+
+```bash
+Makers
+  #culture
+    has an awesome culture
+```
+
+Passing tests are green and failing tests are red. Failing tests display what was expected and what was received:
+
+```
+Programming Languages
+  Python rocks // green output
+  JavaScript is better than Ruby // red output
+    
+    Expected: true
+    Got: false
+    
+```
+

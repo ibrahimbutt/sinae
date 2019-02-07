@@ -66,7 +66,7 @@ const expect = sinae.expect
 Creates a block that groups several tests together.
 
 - `description`: identifies the group of tests in the console.
-- `fn`function decleration, inside which you can further organise your test suite using `describe` blocks, or, set up a test inside an `it` block.
+- `fn`function declaration, inside which you can further organise your test suite using `describe` blocks, or, set up a test inside an `it` block.
 
 ### `it(description: String, fn: Function)`
 
@@ -97,8 +97,10 @@ Evaluate `value` against `condition`.
 
 Evaluate whether an `array` (`value`) contains the `condition`.
 
-- `toContain`: passes if `condition` array contains `condition` one level deep
-- `toContain`: passes if `condition` array doesn't contain `condition` one level deep
+- `toContain(condition: any)`: passes if `condition` array contains `condition` one level deep
+- `toContain(condition: any)`: passes if `condition` array doesn't contain `condition` one level deep
+
+Note: useage of `expect` is `expect(value: Array)` for inclusion matchers.
 
 ## Style
 

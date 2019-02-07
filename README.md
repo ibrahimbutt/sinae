@@ -33,3 +33,25 @@ As a Maker,
 So I can read the console output easily,
 It should indent the output
 ```
+
+## Instructions
+
+### Installation
+
+```bash
+ npm install -D sinae
+```
+
+```
+ yarn add -D sinae
+```
+
+
+
+
+
+
+
+
+
+

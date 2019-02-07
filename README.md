@@ -42,16 +42,42 @@ It should indent the output
  npm install -D sinae
 ```
 
-```
+```bash
  yarn add -D sinae
 ```
 
+### Usage
 
+Require the framework in your test file:
 
+```javascript
+const sinae = require('sinae')
 
+// add required functionality (see API)
+const describe = sinae.describe
+const it = sinae.it
+const expect = sinae.expect
+```
 
+## API
 
+### `describe(description: String, fn: Function)`
 
+Creates a block that groups several tests together.
 
+- `description`: identifies the group of tests in the console.
+- `fn`function decleration, inside which you can further organise your test suite using `describe` blocks, or, set up a test inside an `it` block.
 
+### `it(description: String, fn: Function)`
 
+Creates a block where you can set up and run your test.
+
+- `description`: identifies the test in the console
+- `fn`: function decleration, inside which the test is set up and an expectation is defined
+
+### `expect(value: any).<matcher>(condition: any)`
+
+Stores a value, which is passed onto a matcher for evaluation.
+
+- `value`: the variable, returned value, or object passed in for evaluation
+- `condition`: the expectation the `value` will be compared to 

@@ -1,4 +1,4 @@
-const resultLogger = require('./resultLogger')
+const resultLogger = require('./lib/resultLogger')
 
 module.exports = value => {
   return {

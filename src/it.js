@@ -3,7 +3,15 @@ module.exports = (message, test) => {
     throw Error('it blocks require a function as a second argument')
   }
 
-  console.group(message)
-  test()
-  console.groupEnd()
+  let error = null
+
+  try {
+    test()
+  } catch (thrownError) {
+    error = thrownError
+  } finally {
+    console.group(message)
+    if (error) console.error(error)
+    console.groupEnd()
+  }
 }

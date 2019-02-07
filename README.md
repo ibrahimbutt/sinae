@@ -86,12 +86,19 @@ Stores a value, which is passed onto a matcher for evaluation.
 
 #### Equality
 
-- `toEqual`: returns true if equal
-- `toNotEqual`: returns true if not equal
-- `toBe`: returns true if strictly equal
-- `toNotBe`: returns true if strictly not equal
-- `toContain`: returns true if an array contains `condition` one level deep
-- `toContain`: returns true if an array doesn't contain `condition` one level deep
+Evaluate `value` against `condition`.
+
+- `toEqual(condition: any)`: normal comparision
+- `toNotEqual(condition: any)`: normal comparision
+- `toBe(condition: any)`: strict comparision
+- `toNotBe(condition: any)`: strict comparision
+
+#### Inclusion
+
+Evaluate whether an `array` (`value`) contains the `condition`.
+
+- `toContain`: passes if `condition` array contains `condition` one level deep
+- `toContain`: passes if `condition` array doesn't contain `condition` one level deep
 
 ## Style
 

@@ -1,5 +1,5 @@
-const matchers = require('./matchers')
+const matchers = require('./matchers');
 
 module.exports = value => {
-  return matchers(value)
-}
+  return matchers(value);
+};

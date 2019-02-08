@@ -1,7 +1,4 @@
-const sinae = require('../index.js');
-const describe = sinae.describe;
-const it = sinae.it;
-const expect = sinae.expect;
+const { describe, it, expect } = require('../index.js');
 
 describe('Sinae Tests', () => {
   describe('scenarios', () => {
